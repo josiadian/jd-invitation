@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="img/favicon.png" />
+    <meta
+      name="github-token"
+      content="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"
+    />
+    <title>Josia & Dian Wedding</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <!--simplyCountdown-->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <!-- aos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!--custom js -->
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="spinner-container d-none">
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center"
+    >
+      <main>
+        <p>The Wedding of</p>
+        <h1 class="animatedDiv">Harry Josia & Dian</h1>
+        <br /><br />
+        <h4>Dear <span></span></h4>
+        <label>You are invited.</label><br />
+        <div class="verse mt-4">
+          <label>Romans 8:25 — The New King James Version (NKJV)</label>
+          <blockquote>
+            "But if we hope for what we do not see, we eagerly wait for it with
+            perseverance."
+          </blockquote>
+        </div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">
+          <i class="bi bi-envelope-open"></i> Open Invitation
+        </a>
+      </main>
+    </section>
+
+    <section id="home" class="home d-none">
+      <div class="container reveal">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>With Love</h2>
+            <p>
+              BY THE GRACE AND BLESSING OF OUR GOD, WE INTEND TO ANNOUNCE THE
+              WEDDING CELEBRATION OF OUR BELOVED CHILDREN:
+            </p>
+          </div>
+          <div class="row couple mt-5">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end my-auto">
+                  <h4><b>Harry Josia Tambunan, S.H.</b></h4>
+                  <p>
+                    The first son of <br />Mr. Agustyn Suharko Pangasian
+                    Tambunan (✝)<br />
+                    &<br />Mrs. Nurhayati Dorothy Situmorang (✝)
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/josia2.jpg"
+                    alt="Josia"
+                    class="img-responsive rounded-circle"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <span class="heart"><i class="bi bi-heart-fill"></i></span> -->
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/dian2.jpg"
+                    alt="Dian"
+                    class="img-responsive rounded-circle"
+                  />
+                </div>
+                <div class="col-8 my-auto">
+                  <h4><b>Dian Pranatasari, B.A.</b></h4>
+                  <!-- <p>Lorem ipsum</p> -->
+                  <p>
+                    The first daughter of <br />Mr. Oey Kim Suan (✝)<br />
+                    &<br />Mrs. The Hwoey Ing (✝)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="text-center">
+            <div class="divider"></div>
+            <h5>Counting down to the day</h5>
+            <div class="simply-countdown"></div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info d-none">
+      <div class="container">
+        <div class="row justify-content-center mt-4 reveal">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">
+                <h5 data-aos="fade-left">
+                  <i
+                    class="fa-solid fa-church"
+                    style="color: #bdbc9e; font-size: 40px"
+                  ></i
+                  ><br /><br />Holy Matrimony
+                </h5>
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <div class="divider"></div>
+                    <p>Saturday, 25 January 2025</p>
+                    <p>11:30 AM</p>
+                    <div class="divider"></div>
+                    <p class="alamat">
+                      GKI Taman Cibunut<br />Jl. Van Deventer No.11, Kb. Pisang,
+                      Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40112
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/8tXJ7Zuf4ixvSKh8A"
+                      target="_blank"
+                      class="btn btn-sm ny-3 btn-secondary"
+                      ><i class="bi bi-geo-alt-fill"></i> Direction
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="rsvp" class="rsvp d-none">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>RSVP</h2>
+            <p>
+              Please kindly help us prepare everything better by confirming your
+              attendance to our wedding event with the following RSVP form:
+            </p>
+          </div>
+        </div>
+        <form
+          id="my-form"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycby7fXT9Ig6i1f3gFraNyBTQUhGorYsQ2ljdNnp3WIpa2V8ZNEOopMpAO_pv3jv3lsyX/exec"
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Number of Guest</label>
+              <select name="jumlah" id="jumlah" class="form-select">
+                <option value="1">1 Person</option>
+                <option value="2">2 Person</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label"
+                >Confirmation of Attendance</label
+              >
+              <select name="status" id="status" class="form-select">
+                <option selected>Choose</option>
+                <option value="hadir">Yes. I will attend</option>
+                <option value="tidak hadir">No. Sorry, I can’t come</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary" id="btn-send">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts d-none">
+      <!-- <div class="overlay"></div> -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              Wedding Gifts
+            </h2>
+            <br />
+          </div>
+        </div>
+        <div class="row justify-content-center text-center reveal">
+          <div class="col-md-12">
+            <div data-aos="fade-right">
+              <div class="row justify-content-center">
+                <div
+                  class="col-12 card-body border bg-white bg-white rounded-4 shadow p-4 m-3 position-relative"
+                  style="max-width: 20rem"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="img/avataaars_josia.png"
+                    class="img-fluid rounded"
+                    width="150"
+                    alt="bca"
+                  />
+                  <p
+                    class="card-text mt-3 mb-0 fw-bold"
+                    style="font-size: 0.9rem"
+                  >
+                    Bank Mandiri
+                  </p>
+                  <p class="card-text mb-0" style="font-size: 0.9rem">
+                    1310007731492
+                  </p>
+                  <p class="card-text" style="font-size: 0.9rem">Harry Josia</p>
+
+                  <button
+                    class="btn btn-light btn-sm rounded-3"
+                    data-nomer="1310007731492"
+                    onclick="salin(this)"
+                    autofocus
+                  >
+                    Copy
+                  </button>
+                </div>
+
+                <div
+                  class="col-12 card-body border bg-white rounded-4 shadow p-4 m-3 position-relative"
+                  style="max-width: 20rem"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="img/avataaars_dian.png"
+                    class="img-fluid rounded"
+                    width="150"
+                    alt="bca"
+                  />
+                  <p
+                    class="card-text mt-3 mb-0 fw-bold"
+                    style="font-size: 0.9rem"
+                  >
+                    BCA
+                  </p>
+                  <p class="card-text mb-0" style="font-size: 0.9rem">
+                    8106079396
+                  </p>
+                  <p class="card-text" style="font-size: 0.9rem">
+                    Dian Pranatasari
+                  </p>
+
+                  <button
+                    class="btn btn-light btn-sm rounded-3"
+                    data-nomer="8106079396"
+                    onclick="salin(this)"
+                    autofocus
+                  >
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+            <span class="fw-semibold"
+              >Your generosity is only outdone by your kindness.<br />Thank
+              you</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="greetings" class="greetings d-none">
+      <div class="overlay"></div>
+
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="1500"
+      >
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-10 text-center">
+            <h2>Best Wishes</h2>
+            <br />
+            <span
+              >Leave us your beautiful wishes and most sincere prayers here as
+              we are so excited to embark on this new journey together:</span
+            >
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 col-10">
+            <div class="card text-bg-light mb-5">
+              <div class="card-header">
+                <form
+                  id="greetingForm"
+                  method="POST"
+                  action="https://script.google.com/macros/s/AKfycby7fXT9Ig6i1f3gFraNyBTQUhGorYsQ2ljdNnp3WIpa2V8ZNEOopMpAO_pv3jv3lsyX/exec"
+                  class="row row-cols-md-auto g-3 align-items-center justify-content-center mb-3"
+                >
+                  <div class="col-md-12">
+                    <div>
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div>
+                      <label for="message" class="form-label"
+                        >Write your wishes</label
+                      >
+                      <textarea
+                        id="message"
+                        name="message"
+                        class="form-control"
+                        rows="3"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary w-100"
+                      id="btn-sendmsg"
+                    >
+                      <i class="bi bi-send"></i>
+                      Send
+                    </button>
+                  </div>
+                </form>
+                <div style="max-height: 400px; overflow: auto">
+                  <ul id="greetingList" class="list-group"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery d-none">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h2>Gallery</h2>
+              <div
+                class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+              >
+                <div class="col mt-3">
+                  <a
+                    href="img/foto6.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto6.jpg"
+                      alt="Josia & Dian 6"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto7.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto7.jpg"
+                      alt="Josia & Dian 7"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto8.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto8.jpg"
+                      alt="Josia & Dian 8"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto9.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto9.jpg"
+                      alt="Josia & Dian 9"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto10.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto10.jpg"
+                      alt="Josia & Dian 10"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto11.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto11.jpg"
+                      alt="Josia & Dian11"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto1.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto1.jpg"
+                      alt="Josia & Dian 1"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto2.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto2.jpg"
+                      alt="Josia & Dian 2"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto3.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto3.jpg"
+                      alt="Josia & Dian 3"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto4.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto4.jpg"
+                      alt="Josia & Dian 4"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+                <div class="col mt-3">
+                  <a
+                    href="img/foto5.jpg"
+                    data-toggle="lightbox"
+                    data-gallery="my-gallery"
+                  >
+                    <img
+                      src="img/thumbnail/foto5.jpg"
+                      alt="Josia & Dian 5"
+                      class="img-fluid w-100 rounded"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">Made with ♥<br />Josia & Dian</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/Trust In God.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 11, // required
+        day: 4, // required
+        hours: 11, // Default is 0 [0-23] integer
+        minutes: 30, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "day", plural: "days" },
+          hours: { singular: "hour", plural: "hours" },
+          minutes: { singular: "minute", plural: "minutes" },
+          seconds: { singular: "second", plural: "seconds" },
+        },
+        plural: true, //use plurals
+        inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+        inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
+        // in case of inline set to false
+        enableUtc: false,
+        onEnd: function () {
+          // your code
+          return;
+        },
+        refresh: 1000, //default refresh every 1s
+        sectionClass: "simply-section", //section css class
+        amountClass: "simply-amount", // amount css class
+        wordClass: "simply-word", // word css class
+        zeroPad: false,
+        countUp: false, // enable count up if set to true
+      });
+    </script>
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        //localStorage.setItem("opened", "true");
+        playAudio();
+        document.querySelector("footer").classList.remove("d-none");
+        document.querySelector("#home").classList.remove("d-none");
+        document.querySelector("#info").classList.remove("d-none");
+        document.querySelector("#rsvp").classList.remove("d-none");
+        document.querySelector("#gifts").classList.remove("d-none");
+        document.querySelector("#greetings").classList.remove("d-none");
+        document.querySelector("#gallery").classList.remove("d-none");
+        document
+          .querySelector("#home > div > div > div > h2")
+          .classList.add("animatedDiv");
+        document
+          .querySelector("#home > div > div > div > p")
+          .classList.add("animatedDiv");
+        document.querySelector(".couple").classList.add("animatedDiv");
+      }
+
+      function playAudio() {
+        song.volume = 0.4;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
+
+      //if (!localStorage.getItem("opened")) {
+      //  disableScroll();
+      //}
+    </script>
+    <script>
+      document
+        .getElementById("btn-send")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".spinner-container")
+            .classList.remove("d-none");
+        });
+      window.addEventListener("load", function () {
+        //document.querySelector(".spinner-container").classList.remove("d-none");
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          if (
+            !document.getElementById("nama").value ||
+            !document.getElementById("jumlah").value ||
+            document.getElementById("status").value == "Choose"
+          ) {
+            alert("The RSVP should not be empty");
+          } else {
+            document
+              .querySelector(".spinner-container")
+              .classList.remove("d-none");
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+              method: "POST",
+              body: data,
+            }).then(() => {
+              document
+                .querySelector(".spinner-container")
+                .classList.add("d-none");
+              alert("Attendance confirmation successfully sent!");
+            });
+          }
+        });
+      });
+    </script>
+    <script type="module">
+      import { Octokit } from "https://esm.sh/@octokit/core";
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("to") || "";
+      const pronoun = urlParams.get("p") || ""; //bpk ibu sdr
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${nama}`.replace(/,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+      document.querySelector("#name").value = nama;
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+
+      // To check the scroll position on page load
+      reveal();
+    </script>
+    <script>
+      //nampilin
+      fetch(
+        "https://script.google.com/macros/s/AKfycby7fXT9Ig6i1f3gFraNyBTQUhGorYsQ2ljdNnp3WIpa2V8ZNEOopMpAO_pv3jv3lsyX/exec"
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          function displayData(data) {
+            const dataList = document.getElementById("greetingList");
+
+            data.data
+              .sort((a, b) => data.data.indexOf(b) - data.data.indexOf(a))
+              .forEach((item) => {
+                const listItem = document.createElement("li");
+                listItem.classList.add("list-group-item");
+                listItem.innerHTML = `<p class="mb-0 fw-semibold"><i class="bi bi-people-fill"></i> ${item.name}</p><label>${item.message}</label>`;
+                dataList.appendChild(listItem);
+              });
+          }
+
+          // Jalankan fungsi untuk menampilkan data
+          displayData(data);
+        })
+        .catch((error) => console.error("Error:", error));
+    </script>
+    <script>
+      document
+        .getElementById("btn-sendmsg")
+        .addEventListener("click", function () {
+          if (
+            !document.getElementById("name").value ||
+            !document.getElementById("message").value
+          ) {
+            alert("The guestbook should not be empty");
+          } else {
+            document
+              .querySelector(".spinner-container")
+              .classList.remove("d-none");
+            const form = document.getElementById("greetingForm");
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              document
+                .querySelector(".spinner-container")
+                .classList.remove("d-none");
+              const data = new FormData(form);
+              const action = e.target.action;
+              fetch(action, {
+                method: "POST",
+                body: data,
+              }).then(() => {
+                document
+                  .querySelector(".spinner-container")
+                  .classList.add("d-none");
+                alert("Message successfully sent!");
+                document.querySelector("#message").value = "";
+                fetch(
+                  "https://script.google.com/macros/s/AKfycby7fXT9Ig6i1f3gFraNyBTQUhGorYsQ2ljdNnp3WIpa2V8ZNEOopMpAO_pv3jv3lsyX/exec"
+                )
+                  .then((response) => response.json())
+                  .then((data) => {
+                    function displayData(data) {
+                      const dataList = document.getElementById("greetingList");
+                      document.getElementById("greetingList").innerHTML = "";
+                      data.data
+                        .sort(
+                          (a, b) => data.data.indexOf(b) - data.data.indexOf(a)
+                        )
+                        .forEach((item) => {
+                          const listItem = document.createElement("li");
+                          listItem.classList.add("list-group-item");
+                          listItem.innerHTML = `<p class="mb-0 fw-semibold"><i class="bi bi-people-fill"></i> ${item.name}</p><label>${item.message}</label>`;
+                          dataList.appendChild(listItem);
+                        });
+                    }
+
+                    // Jalankan fungsi untuk menampilkan data
+                    displayData(data);
+                  })
+                  .catch((error) => console.error("Error:", error));
+              });
+            });
+          }
+        });
+    </script>
+  </body>
+</html>
