@@ -113,15 +113,65 @@ body {
 }
 
 .home {
-  /* background-image: url(img/floral.jpg); */
   background-color: #ece6e2;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  /* margin-top: -6rem; */
   padding-top: 10rem;
-  /* padding-top: 10rem; */
   padding-bottom: 7rem;
+  display: flex; /* Aktifkan Flexbox */
+  justify-content: center; /* Atur konten ke tengah secara horizontal */
+  align-items: center; /* Atur konten ke tengah secara vertikal */
+  flex-direction: column; /* Agar konten mengikuti alur vertikal */
+  text-align: center; /* Sesuaikan teks untuk tampilan mobile */
+}
+
+.couple {
+  margin-top: 2rem; /* Berikan sedikit jarak antar elemen */
+}
+
+.couple .col-lg-6 {
+  margin-bottom: 1rem; /* Berikan jarak antar kolom */
+}
+
+.couple .row {
+  flex-direction: column; /* Atur elemen menjadi satu kolom */
+  align-items: center; /* Pusatkan elemen gambar dan teks */
+}
+
+.couple img {
+  margin-bottom: 1rem; /* Tambahkan jarak di bawah gambar */
+}
+
+.name1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row; /* Kembali ke tata letak horizontal di layar lebih besar */
+    text-align: left;
+  }
+
+  .couple .row {
+    flex-direction: row; /* Tata letak default untuk desktop */
+    align-items: flex-start;
+  }
+
+  .couple img {
+    margin-bottom: 0; /* Hapus jarak pada desktop */
+  }
+
+  .name1 {
+    text-align: right;
+  }
+}
+
+.img-oval {
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  width: 100%; /* Responsif untuk mengisi kolom */
+  aspect-ratio: 3/4; /* Atur rasio untuk membuat bentuk oval */
+  object-fit: cover; /* Menjaga gambar tetap rapi */
 }
 
 .home h2,
@@ -398,7 +448,7 @@ body {
 }
 .greetings label {
   font-size: 1rem;
-  color: var(--white);
+  color: var(--dar);
 }
 
 .rsvp button {
@@ -417,13 +467,23 @@ body {
   background-color: #f5f5f5;
 }
 
-.bs5-lightbox .lightbox {
-  background-color: #fff !important; /* Warna putih */
+.lightbox .lightbox-content img {
+  max-width: 90%; /* Gambar hanya akan menggunakan 90% dari lebar layar */
+  max-height: 90%; /* Gambar hanya akan menggunakan 90% dari tinggi layar */
+  object-fit: contain; /* Gambar tetap terlihat proporsional */
+  margin: auto; /* Pusatkan gambar */
 }
 
-.bs5-lightbox .modal-content {
-  background-color: #fff !important; /* Konten lightbox */
-  color: #000; /* Teks agar terlihat di background putih */
+.lightbox .lightbox-content {
+  display: flex; /* Flex untuk memusatkan konten */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.9
+  ); /* Warna latar belakang hitam dengan transparansi */
 }
 
 footer {
