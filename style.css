@@ -486,6 +486,40 @@ body {
   ); /* Warna latar belakang hitam dengan transparansi */
 }
 
+@media (max-width: 768px) {
+  #lightboxCarousel-ouv1swhz {
+    position: fixed; /* Pastikan carousel mengisi seluruh layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050; /* Agar muncul di atas elemen lain */
+    background-color: #000; /* Tambahkan background hitam */
+  }
+
+  .carousel-item {
+    height: 100vh !important; /* Pastikan item carousel mengisi tinggi layar */
+  }
+
+  .carousel-item .ratio {
+    padding-top: 0 !important; /* Hilangkan padding dari rasio */
+    height: 100%; /* Sesuaikan tinggi elemen */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%; /* Isi layar penuh */
+    object-fit: contain; /* Gambar tetap proporsional */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100%; /* Kontrol navigasi mengikuti tinggi layar */
+    display: flex;
+    align-items: center;
+  }
+}
+
 footer {
   padding: 1rem;
   background-color: var(--dark);
